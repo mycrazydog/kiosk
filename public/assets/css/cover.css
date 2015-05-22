@@ -41,9 +41,9 @@ body {
 
 
 * {
-/*cursor: none !important;*/
-  cursor: crosshair;
-  }
+cursor: none !important;
+//cursor: crosshair;
+}
 
 
 
@@ -292,7 +292,9 @@ font-weight: 100;
 
 .btn-back, .btn-close{font-size:7rem;background-color: #386687;}
 
-.my-video-controls{padding: 15px; text-align: center; background-color: black; color: white; font-size: 2.5rem; font-weight: bold;}
-.vid-left, .vid-right {float: left;	width: 50%;}
+.my-video-controls{padding: 15px; text-align: center; background-color: black; color: white; font-size:3.0rem; font-weight: bold;display:table;}
+.vid-left, .vid-right {width: 50%;vertical-align:middle;display:table-cell;}
+.my-video-controls .btn{font-size:5.5rem;}
+.vid-left{padding-top:15px;}
 
 .vjs-default-skin .vjs-control-bar { font-size: 200% }

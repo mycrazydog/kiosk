@@ -97,6 +97,7 @@
       </video>
       
 		<div class="my-video-controls">
+			
 			<div class="vid-left">    
 				<button type="button" class="btn btn-primary btn-lg" onclick="Custombox.close();">
 				<span>&times;</span>Close
