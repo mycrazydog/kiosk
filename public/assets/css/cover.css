@@ -1,0 +1,298 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #fff;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body,
+.custombox-container {
+  height: 100%;
+  background-color: #000;
+}
+body {
+  color: #fff;
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+* {
+/*cursor: none !important;*/
+  cursor: crosshair;
+  }
+
+
+
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+h1.cover-heading{
+  font-family: "Montserrat";
+  font-size:7.0rem;
+  font-weight:bold;
+line-height:6.0rem;
+}
+h3.cover-subtitle{
+  font-family: "Roboto Slab";
+  font-size:6.0rem;
+  font-weight: 100;
+}
+
+h1{
+margin-top: 0px;
+margin-bottom: 0px;
+line-height:9rem;
+}
+
+h3{
+margin-top: 0px;
+margin-bottom: 30px;
+line-height:8rem;
+}
+
+
+
+
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+.mastfoot-left{
+  font-family: "Montserrat";
+  font-size:4.0rem;
+  font-weight:bold;
+  color:#fff;
+  text-align:left;
+  padding-top:50px;
+  line-height: 4.0rem;
+}
+
+.mastfoot-right{padding:20px;}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 90%;
+  }
+}
+
+.thumbnail {
+	padding:0;
+min-height:210px;
+}
+
+
+
+
+
+
+.modal-video {
+    /*background-color: #FFF;*/
+    width: 1200px;
+    box-shadow: 0 8px 6px -6px black;
+    text-align: left;
+    display: none;
+    color:#000;
+}
+
+.modal-info {
+
+    width: 1200px !important;
+    box-shadow: 0 8px 6px -6px black;
+    text-align: left;
+    display: none;
+
+    color: #fff;
+    background: #00703c;
+
+    border-radius: 3px;
+    margin: 0 auto;
+}
+
+.modal-info h3 {
+  margin: 0;
+  padding: 0.4em;
+  text-align: center;
+  font-size: 2.4em;
+  font-weight: 300;
+  opacity: 0.8;
+  background: rgba(0,0,0,0.1);
+  border-radius: 3px 3px 0 0;
+}
+
+.modal-info > div {
+  padding: 15px 40px 30px;
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.15em;
+}
+.modal-info > div p {
+  margin: 0;
+  padding: 10px 0;
+}
+.modal-info > div ul {
+  margin: 0;
+  padding: 0 0 30px 20px;
+}
+
+.modal-info button {
+  display: block;
+  margin: 0 auto;
+  font-size: 0.8em;
+}
+
+
+.thumbnail{
+font-family: "Roboto Slab";
+background:#386687;
+border: none !important;
+border-radius: 0px !important;
+font-weight: 100;
+}
+.thumbnail .caption{color:#fff;padding: 25px;min-height:150px;}
+/*.home .thumbnail .caption{min-height:300px;}*/
+
+.thumbnail h4{margin-bottom:0px;font-size:2.75rem;font-weight: 100;}
+.thumbnail p{padding-top:0px;font-size:2.0rem;}
+
+.btn-back, .btn-close{font-size:7rem;background-color: #386687;}
+
+.my-video-controls{padding: 15px; text-align: center; background-color: black; color: white; font-size: 2.5rem; font-weight: bold;}
+.vid-left, .vid-right {float: left;	width: 50%;}
+
+.vjs-default-skin .vjs-control-bar { font-size: 200% }
